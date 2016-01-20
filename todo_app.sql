@@ -1,6 +1,12 @@
 DROP user IF EXISTS "michael";
 
--- INSERT INTO users (name, password)
+CREATE USER michael WITH ENCRYPTED PASSWORD 'stonebreaker';
+
+
+
+
+
+
 -- VALUES ('Michael', HASHBYTES('SHA2_512', 'stonebreaker'));
 
 -- DROP DATABASE todo_app;
