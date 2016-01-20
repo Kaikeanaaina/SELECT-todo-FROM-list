@@ -24,7 +24,7 @@ CREATE TABLE tasks(
 
 ALTER TABLE tasks DROP COLUMN completed;
 
--- ALTER TABLE tasks ADD COLUMN completed_at timestamp DEFAULT NULL;
+ALTER TABLE tasks ADD COLUMN completed_at timestamp DEFAULT NULL;
 
 -- ALTER TABLE tasks ADD COLUMN update_at timestamp NOT NULL;
 
