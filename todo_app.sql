@@ -65,10 +65,15 @@ VALUES ('mistake 2', 'another test entry');
 INSERT INTO tasks (title, description)
 VALUES ('third mistake', 'another test entry');
 
---xiii
-SELECT title
+-- --xiii
+-- SELECT title
+-- FROM tasks
+-- WHERE title LIKE '%mistake%';
+
+-- xiv
+DELETE
 FROM tasks
-WHERE title LIKE '%mistake%';
+WHERE title = 'mistake 1';
 
 
 
