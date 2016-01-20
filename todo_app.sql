@@ -57,6 +57,10 @@ WHERE title = 'Study SQL';
 INSERT INTO tasks (title, description)
 VALUES ('mistake 1', 'a test entry');
 
+--xi
+INSERT INTO tasks (title, description)
+VALUES ('mistake 2', 'another test entry');
+
 
 
 
