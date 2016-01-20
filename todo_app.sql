@@ -33,25 +33,29 @@ VALUES ('Study SQL', 'Complete this exercise', now());
 INSERT INTO tasks (title, description)
 VALUES ('Study PostgreSQL', 'Read all the documentation');
 
-
-SELECT title
-FROM tasks
-WHERE completed_at IS NULL;
+-- --vi
+-- SELECT title
+-- FROM tasks
+-- WHERE completed_at IS NULL;
 
 --vii
 UPDATE tasks
 SET completed_at = now()
 WHERE title = 'Study SQL';
 
---viii
-SELECT title, description
-FROM tasks
-WHERE completed_at IS NULL;
+-- --viii
+-- SELECT title, description
+-- FROM tasks
+-- WHERE completed_at IS NULL;
 
---ix
-SELECT *
-FROM tasks
-ORDER BY created_at DESC;
+-- --ix
+-- SELECT *
+-- FROM tasks
+-- ORDER BY created_at DESC;
+
+--x
+INSERT INTO tasks (title, description)
+VALUES ('mistake 1', 'a test entry');
 
 
 
