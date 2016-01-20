@@ -85,6 +85,11 @@ DELETE
 FROM tasks
 WHERE title LIKE '%mistake%';
 
+--xvii
+SELECT *
+FROM tasks
+ORDER BY title ASC;
+
 
 \dt
 
