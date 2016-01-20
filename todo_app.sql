@@ -12,16 +12,17 @@ CREATE DATABASE todo_app;
 
 DROP TABLE IF EXISTS tasks;
 
-CREATE TABLE tasks
-(id serial NOT NULL,
-PRIMARY KEY ("id"),
-title character varying(255) NOT NULL,
-description text NULL,
-created_at timestamp WITHOUT TIME ZONE NOT NULL DEFAULT now(),
-update_at timestamp WITHOUT TIME ZONE NULL,
-completed boolean NOT NULL DEFAULT false);
+CREATE TABLE tasks(
+  "id" serial NOT NULL,
+  PRIMARY KEY ("id"),
+  "title" character varying(255) NOT NULL,
+  "description" text NULL,
+  "created_at" timestamp WITHOUT TIME ZONE NOT NULL DEFAULT now(),
+  "update_at" timestamp WITHOUT TIME ZONE NULL,
+  "completed" boolean NOT NULL DEFAULT false
+);
 
---ALTER TABLE tasks DROP COLUMN completed;
+ALTER TABLE tasks DROP COLUMN completed;
 
 -- ALTER TABLE tasks ADD COLUMN completed_at timestamp DEFAULT NULL;
 
