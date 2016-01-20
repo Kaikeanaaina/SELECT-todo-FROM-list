@@ -30,9 +30,15 @@ ALTER TABLE tasks ADD COLUMN update_at timestamp NOT NULL DEFAULT now();
 INSERT INTO tasks (title, description, update_at)
 VALUES ('Study SQL', 'Complete this exercise', now());
 
+INSERT INTO tasks (title, description)
+VALUES ('Study PostgreSQL', 'Read all the documentation');
 
 
+SELECT * FROM tasks WHERE completed_at = NULL;
 
+UPDATE tasks
+SET completed_at = now()
+WHERE title = 'Study SQL';
 
 
 
