@@ -75,11 +75,15 @@ DELETE
 FROM tasks
 WHERE title = 'mistake 1';
 
---xv
-SELECT title, description
+-- --xv
+-- SELECT title, description
+-- FROM tasks
+-- WHERE title LIKE '%mistake%';
+
+--xvi
+DELETE
 FROM tasks
 WHERE title LIKE '%mistake%';
-
 
 
 \dt
