@@ -61,6 +61,11 @@ VALUES ('mistake 1', 'a test entry');
 INSERT INTO tasks (title, description)
 VALUES ('mistake 2', 'another test entry');
 
+--xii
+INSERT INTO tasks (title, description)
+VALUES ('third mistake', 'another test entry');
+
+
 
 
 
