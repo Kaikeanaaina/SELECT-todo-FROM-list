@@ -34,7 +34,9 @@ INSERT INTO tasks (title, description)
 VALUES ('Study PostgreSQL', 'Read all the documentation');
 
 
-SELECT title FROM tasks WHERE completed_at IS NULL;
+SELECT title
+FROM tasks
+WHERE completed_at IS NULL;
 
 --vii
 UPDATE tasks
@@ -46,6 +48,10 @@ SELECT title, description
 FROM tasks
 WHERE completed_at IS NULL;
 
+--ix
+SELECT *
+FROM tasks
+ORDER BY created_at DESC;
 
 
 
