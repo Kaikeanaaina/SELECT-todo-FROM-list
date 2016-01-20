@@ -75,7 +75,10 @@ DELETE
 FROM tasks
 WHERE title = 'mistake 1';
 
-
+--xv
+SELECT title, description
+FROM tasks
+WHERE title LIKE '%mistake%';
 
 
 
