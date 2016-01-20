@@ -13,8 +13,7 @@ CREATE DATABASE todo_app;
 DROP TABLE IF EXISTS tasks;
 
 CREATE TABLE tasks(
-  "id" serial NOT NULL,
-  PRIMARY KEY ("id"),
+  "id" serial NOT NULL PRIMARY KEY,
   "title" character varying(255) NOT NULL,
   "description" text NULL,
   "created_at" timestamp WITHOUT TIME ZONE NOT NULL DEFAULT now(),
@@ -26,9 +25,10 @@ ALTER TABLE tasks DROP COLUMN completed;
 
 ALTER TABLE tasks ADD COLUMN completed_at timestamp DEFAULT NULL;
 
--- ALTER TABLE tasks ADD COLUMN update_at timestamp NOT NULL;
+ALTER TABLE tasks ADD COLUMN update_at timestamp NOT NULL DEFAULT now();
 
--- ALTER TABLE tasks ADD COLUMN update_at timestamp DEFAULT now();
+INSERT INTO tasks (title, description, update_at)
+VALUES ('Study SQL', 'Complete this exercise', now());
 
 
 
