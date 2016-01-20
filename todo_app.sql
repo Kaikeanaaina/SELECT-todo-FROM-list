@@ -34,11 +34,18 @@ INSERT INTO tasks (title, description)
 VALUES ('Study PostgreSQL', 'Read all the documentation');
 
 
-SELECT * FROM tasks WHERE completed_at = NULL;
+SELECT title FROM tasks WHERE completed_at IS NULL;
 
+--vii
 UPDATE tasks
 SET completed_at = now()
 WHERE title = 'Study SQL';
+
+--viii
+SELECT title, description
+FROM tasks
+WHERE completed_at IS NULL;
+
 
 
 
@@ -46,5 +53,6 @@ WHERE title = 'Study SQL';
 
 
 \dt
+
 
 SELECT * FROM tasks;
